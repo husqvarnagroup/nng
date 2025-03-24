@@ -1623,6 +1623,15 @@ nng_tls_config_own_cert(
 	return (NNG_ENOTSUP);
 }
 
+int nng_tls_config_psk(nng_tls_config *cfg, const char *identity,
+    const uint8_t *key, size_t key_len)
+{
+	NNI_ARG_UNUSED(cfg);
+	NNI_ARG_UNUSED(identity);
+	NNI_ARG_UNUSED(key);
+	NNI_ARG_UNUSED(key_len);
+}
+
 int
 nng_tls_config_ca_file(nng_tls_config *cfg, const char *path)
 {
